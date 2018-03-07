@@ -1,0 +1,30 @@
+backend 
+
+middleware que ajuda a interpretar a requisição a partir de forms, jsons 
+npm i --save-dev body-parser@1.15.2 
+
+servidor web
+npm i --save-dev express@4.14.0 
+
+framework que vai ajudar na persistencia
+npm i --save-dev mongoose@4.7.0 
+
+--ele ajuda nas requisições juntando express com mongoose
+npm i --save-dev node-restful@0.2.5 
+
+--servidor de aplicação para produção
+npm i --save-dev pm2@2.1.5 
+
+--seridor de aplicação para dev
+npm i --save-dev nodemon@1.11.0
+
+ajudar a simplificar algumas coisas
+npm i --save-dev lodash@4.17.4
+
+ajudar na paginação das consultas
+npm i --save-dev mongoose-paginate@5.0.3
+
+para ajudar a resolver problema de paginação
+npm i --save-dev express-query-int@1.0.1
+
+npm i --save-dev body-parser@1.15.2 express@4.14.0 mongoose@4.7.0 node-restful@0.2.5 pm2@2.1.5 nodemon@1.11.0 lodash@4.17.4 mongoose-paginate@5.0.3 express-query-int@1.0.1
