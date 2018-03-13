@@ -5,11 +5,6 @@ import {connect} from 'react-redux'
 import {getList, showUpdate, showRemove} from './billingCycleActions'
 
 class BillingCycleList extends Component {
-
-    constructor(props) {
-        super(props)
-    }
-
     componentWillMount(){
         this.props.getList()
     }
@@ -34,8 +29,6 @@ class BillingCycleList extends Component {
     }
 
     render() {
-        
-        console.log(this.props.list)
         return (
             
             <div>
