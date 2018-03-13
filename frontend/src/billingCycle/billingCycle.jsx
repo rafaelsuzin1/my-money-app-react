@@ -9,13 +9,14 @@ import TabsHeader from '../common/tab/tabsHeader'
 import TabsContent from '../common/tab/tabsContent'
 import TabHeader from '../common/tab/tabHeader'
 import TabContent from '../common/tab/tabContent'
+import BillingCycleList from './billingCycleList'
 import {selectTab, showTabs} from '../common/tab/tabActions'
 
 
 class BillingCycle extends Component {
    componentWillMount(){
-       this.props.selectTab('tabRemove')
-       this.props.showTabs('tabRemove')
+       this.props.selectTab('tabList')
+       this.props.showTabs('tabList', 'tabCreate', 'tabUpdate', 'tabRemove')
    }
 
     render() {
@@ -31,7 +32,9 @@ class BillingCycle extends Component {
                             <TabHeader label='Excluir' icon='trash-o' target='tabRemove'/>
                         </TabsHeader>
                         <TabsContent>
-                            <TabContent id='tabList'><h1>Lista</h1></TabContent>
+                            <TabContent id='tabList'>
+                                <BillingCycleList />
+                            </TabContent>
                             <TabContent id='tabCreate'><h1>Incluir</h1></TabContent>
                             <TabContent id='tabUpdate'><h1>Atualizar</h1></TabContent>
                             <TabContent id='tabRemove'><h1>Remover</h1></TabContent>
